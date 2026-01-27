@@ -1,0 +1,44 @@
+/* Container centralizado */
+.container {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+  font-family: Arial, sans-serif;
+}
+
+/* Estilo da mensagem de aviso */
+.aviso {
+  background-color: #4caf50; /* Verde */
+  color: white;
+  padding: 20px 40px;
+  border-radius: 8px;
+  font-size: 24px;
+  box-shadow: 0 4px 6px rgba(0,0,0,0.2);
+  animation: fadeOut 0.5s ease forwards 2.5s; /* Fade antes de desaparecer */
+}
+
+/* Animação para desaparecer suavemente */
+@keyframes fadeOut {
+  to {
+    opacity: 0;
+  }
+}
+
+/* Estilo do botão de recarregar */
+.botao-recarregar {
+  margin-top: 20px;
+  padding: 10px 20px;
+  font-size: 16px;
+  border: none;
+  border-radius: 6px;
+  background-color: #2196f3;
+  color: white;
+  cursor: pointer;
+  transition: background-color 0.3s;
+}
+
+.botao-recarregar:hover {
+  background-color: #1976d2;
+}

@@ -1,0 +1,119 @@
+/* Fundo com gradiente suave */
+body {
+  font-family: "Poppins", sans-serif;
+  background: linear-gradient(135deg, #6dd5ed, #2193b0);
+  margin: 0;
+  padding: 0;
+  display: flex;
+  justify-content: center;
+  align-items: flex-start;
+  min-height: 100vh;
+}
+
+/* Container principal */
+.app-container {
+  background: #fff;
+  margin-top: 60px;
+  padding: 30px;
+  border-radius: 16px;
+  box-shadow: 0px 10px 25px rgba(0, 0, 0, 0.1);
+  width: 500px;
+  max-width: 90%;
+  animation: fadeIn 0.5s ease-in-out;
+}
+
+/* Título */
+.app-container h1 {
+  text-align: center;
+  font-size: 26px;
+  margin-bottom: 25px;
+  color: #333;
+}
+
+/* Área do input + botão */
+.input-container {
+  display: flex;
+  gap: 10px;
+  margin-bottom: 25px;
+}
+
+.input-container input {
+  flex: 1;
+  padding: 12px;
+  font-size: 16px;
+  border: 2px solid #ddd;
+  border-radius: 10px;
+  outline: none;
+  transition: border 0.3s;
+}
+
+.input-container input:focus {
+  border-color: #2193b0;
+}
+
+.input-container button {
+  padding: 12px 20px;
+  border: none;
+  background: #2193b0;
+  color: #fff;
+  font-weight: bold;
+  font-size: 14px;
+  border-radius: 10px;
+  cursor: pointer;
+  transition: 0.3s;
+}
+
+.input-container button:hover {
+  background: #176b82;
+}
+
+/* Lista */
+.todo-list {
+  display: flex;
+  flex-direction: column;
+  gap: 12px;
+}
+
+/* Cada item */
+.todo-item {
+  background: #f9f9f9;
+  padding: 14px 18px;
+  border-radius: 12px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  transition: transform 0.2s, box-shadow 0.2s;
+}
+
+.todo-item:hover {
+  transform: translateX(5px);
+  box-shadow: 0px 4px 12px rgba(0, 0, 0, 0.1);
+}
+
+/* Texto da tarefa */
+.todo-text {
+  font-size: 16px;
+  color: #333;
+}
+
+/* Botão de excluir */
+.todo-item button {
+  background: #ff4b5c;
+  border: none;
+  color: #fff;
+  font-size: 14px;
+  padding: 8px 12px;
+  border-radius: 8px;
+  cursor: pointer;
+  transition: 0.3s;
+}
+
+.todo-item button:hover {
+  background: #d63447;
+}
+
+/* Animação suave ao carregar */
+@keyframes fadeIn {
+  from { opacity: 0; transform: translateY(-15px); }
+  to { opacity: 1; transform: translateY(0); }
+}
