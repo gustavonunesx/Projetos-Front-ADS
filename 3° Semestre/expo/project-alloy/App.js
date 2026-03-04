@@ -21,7 +21,7 @@ export default function App() {
       <Text style={styles.titulo}>Tech Alloy</Text>
       <Text style={styles.subtitulo}>Controle de Produção</Text>
 
-      {/* Card Ocorrência */}
+      
       <View style={styles.card}>
         <Text style={styles.cardTitulo}>Relatório de Ocorrência</Text>
 
