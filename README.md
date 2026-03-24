@@ -1,2 +1,2 @@
 # Aulas-Front-ADS
-### npx create-expo-app@latest painel-monitoramento --template blank@54
+### npx create-expo-app@latest nome_projeto --template blank@54
